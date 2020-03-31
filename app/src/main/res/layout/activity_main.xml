@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFA726"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/Title"
+        android:textColor="#3949AB"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:contentDescription="@string/ball"
+        app:srcCompat="@drawable/ball1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="210dp"
+            android:layout_height="84dp"
+            android:layout_centerInParent="true"
+            android:background="#00897B"
+            android:fontFamily="monospace"
+            android:text="@string/shakeButton"
+            android:textColor="#FDD835"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>
